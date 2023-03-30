@@ -35,6 +35,27 @@
             "./migrations/.gitignore"
         ]
     },
+    "nyholm/psr7": {
+        "version": "1.5",
+        "recipe": {
+            "repo": "github.com/symfony/recipes",
+            "branch": "main",
+            "version": "1.0",
+            "ref": "0cd4d2d0e7f646fda75f9944f747a56e6ed13d4c"
+        },
+        "files": [
+            "./config/packages/nyholm_psr7.yaml"
+        ]
+    },
+    "openai-php/symfony": {
+        "version": "0.4",
+        "recipe": {
+            "repo": "github.com/symfony/recipes-contrib",
+            "branch": "main",
+            "version": "0.3",
+            "ref": "23b35dfd25adb2c5c467a50239a9ef0aa16f9328"
+        }
+    },
     "phpunit/phpunit": {
         "version": "9.6",
         "recipe": {
@@ -47,18 +68,6 @@
             "./.env.test",
             "./phpunit.xml.dist",
             "./tests/bootstrap.php"
-        ]
-    },
-    "sensio/framework-extra-bundle": {
-        "version": "6.2",
-        "recipe": {
-            "repo": "github.com/symfony/recipes",
-            "branch": "main",
-            "version": "5.2",
-            "ref": "fb7e19da7f013d0d422fa9bce16f5c510e27609b"
-        },
-        "files": [
-            "./config/packages/sensio_framework_extra.yaml"
         ]
     },
     "symfony/console": {
@@ -116,18 +125,6 @@
             "./src/Kernel.php"
         ]
     },
-    "symfony/mailer": {
-        "version": "6.2",
-        "recipe": {
-            "repo": "github.com/symfony/recipes",
-            "branch": "main",
-            "version": "4.3",
-            "ref": "2bf89438209656b85b9a49238c4467bff1b1f939"
-        },
-        "files": [
-            "./config/packages/mailer.yaml"
-        ]
-    },
     "symfony/maker-bundle": {
         "version": "1.48",
         "recipe": {
@@ -136,18 +133,6 @@
             "version": "1.0",
             "ref": "fadbfe33303a76e25cb63401050439aa9b1a9c7f"
         }
-    },
-    "symfony/messenger": {
-        "version": "6.2",
-        "recipe": {
-            "repo": "github.com/symfony/recipes",
-            "branch": "main",
-            "version": "6.0",
-            "ref": "ba1ac4e919baba5644d31b57a3284d6ba12d52ee"
-        },
-        "files": [
-            "./config/packages/messenger.yaml"
-        ]
     },
     "symfony/monolog-bundle": {
         "version": "3.8",
@@ -239,6 +224,9 @@
             "./templates/base.html.twig"
         ]
     },
+    "symfony/ux-react": {
+        "version": "v2.7.1"
+    },
     "symfony/validator": {
         "version": "6.2",
         "recipe": {
@@ -274,6 +262,25 @@
         },
         "files": [
             "./config/packages/messenger.yaml"
+        ]
+    },
+    "symfony/webpack-encore-bundle": {
+        "version": "1.16",
+        "recipe": {
+            "repo": "github.com/symfony/recipes",
+            "branch": "main",
+            "version": "1.10",
+            "ref": "f8fc53f1942f76679e9ee3c25fd44865355707b5"
+        },
+        "files": [
+            "./assets/app.js",
+            "./assets/bootstrap.js",
+            "./assets/controllers.json",
+            "./assets/controllers/hello_controller.js",
+            "./assets/styles/app.css",
+            "./config/packages/webpack_encore.yaml",
+            "./package.json",
+            "./webpack.config.js"
         ]
     },
     "twig/extra-bundle": {

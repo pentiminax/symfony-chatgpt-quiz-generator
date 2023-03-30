@@ -1,0 +1,7 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Résultat - {{ quizResult.quiz.title }}{% endblock %}
+
+{% block body %}
+    <div {{ react_component('QuizResult', { quizResult: quizResult|serialize('json', { groups: 'quizResult:read' }) }) }}></div>
+{% endblock %}
