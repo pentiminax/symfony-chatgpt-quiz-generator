@@ -45,4 +45,12 @@ class QuizService
 
         return $quiz;
     }
+
+    /**
+     * @return Quiz[]
+     */
+    public function findLastGeneratedQuizzes(): array
+    {
+        return $this->quizRepo->findBy([], limit: 3);
+    }
 }
