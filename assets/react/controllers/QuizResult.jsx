@@ -1,7 +1,9 @@
 import React from 'react';
 import {
+    Button,
     Chip,
-    Container, Divider, Paper,
+    Container,
+    Paper,
     Table,
     TableBody,
     TableCell,
@@ -60,6 +62,9 @@ export default function QuizResult(props) {
                     </TableBody>
                 </Table>
             </TableContainer>
+            <div style={{ marginTop: 10, textAlign: "center" }}>
+                <Button onClick={() => window.location.href = '/'} variant="contained">Retour à la page d'accueil</Button>
+            </div>
         </Container>
     )
 }
