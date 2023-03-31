@@ -10,6 +10,10 @@ export default function CreateQuiz () {
         const formData = new FormData(e.target);
         const content = formData.get('content');
 
+        if(0 === content.trim().length) {
+            return;
+        }
+
         setGenerating(true);
 
         const response = await fetch('/quizzes', {
